@@ -1,27 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Top_nav() {
+function TopNav() {
   return (
     <div>
       <ul className="nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/home">
+          <Link to="/home" className="nav-link active">
             Home
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/about_me">
+          <Link to="/aboutme" className="nav-link active">
             About me
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/project">
+          <Link to="/project" className="nav-link active">
             Project
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
   );
 }
 
-export default Top_nav;
+export default TopNav;
